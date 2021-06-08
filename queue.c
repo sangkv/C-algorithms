@@ -86,8 +86,10 @@ void delQueue(queue* ptr_Q, typeOfData* x)
 	}
 	else
 	{
-		*x = ptr_Q->first->data;
-		ptr_Q->first = ptr_Q->first->next;
+		typeOfNode* p = ptr_Q->first;
+		*x = p->data;
+		ptr_Q->first = p->next;
+		free(p);
 	}
 }
 
