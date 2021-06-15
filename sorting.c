@@ -71,7 +71,7 @@ int partition(typeOfData* p, int left, int right, typeOfData pivot)
 			r--;
 		}
 		
-		if(l < r) /* Thực hiện swap nếu thỏa mãn điều kiện l<r */
+		if(l < r) /* Thực hiện swap nếu thỏa mãn điều kiện l < r */
 		{
 			swap(&p[l], &p[r]);
 		}
